@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    .carousel-item {
+      height: 20rem;
+      color: rgba(255, 255, 255, 0.887);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      z-index: 1; 
+    }
+    
+    .container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 30rem;
+      padding-bottom: 50px;
+      z-index: 2;
+    }
+    
+
+    .cardio {
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+
+    }
+
+    h1 {
+      font-size: 7rem;
+      text-align: left;
+    }
+
+    p {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-airbus">
+        <a class="navbar-brand" href="#">
+          <img src="https://theaviatorsafrica.com/wp-content/uploads/2023/10/Airbus-Symbol-700x394-1.png" width="120"
+            height="70" class="d-inline-block align-top" alt="Airbus Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mr-4" href="#" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                Others
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/Airplane/">Airplane</a>
+                <a class="dropdown-item" href="/Career/">Booking</a>
+                <a class="dropdown-item" href="/">Contact us</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="background-image: url(https://aeroreport.de/media/pages/good-to-know/08-24-airbus-a380-das-groesste-passagierflugzeug-der-welt/kopf/81fd02796d-1721633745/a380-emirates-msn272-aufmacher-2000x.webp);">
+          <div class="container">
+            <h1>Airbus</h1>
+            <p>We are consistent in maintaining the quality of our aircraft, we are the best in the airline industry.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://s1.1zoom.me/big0/494/Airbus_Passenger_Airplanes_A350-1000_Flight_550982_1280x692.jpg);">
+          <div class="container">
+            <h1>What's new?</h1>
+            <p>We always have the latest innovations for the good of commercial aircraft quality and to protect the world from fuel pollution, zero fuel has been designed.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://static0.simpleflyingimages.com/wordpress/wp-content/uploads/2024/09/airbus-a321xlr-fuselage-shutterstock_2479195465.jpg);">
+          <div class="container">
+            <h1>Join us!</h1>
+            <p>Being part of the change in the world aviation industry.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="cardio">
+      <div class="card" style="width: 40rem;">
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/721/271/desktop-wallpaper-airbus-a320neo-original-livery-aircraft-3849-airbus-a320neo.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">A320 NEO</h5>
+          <p class="card-text">The airbus company released the latest generation A-320 aircraft with the NEO version
+            designed to have more features and have more systems in flight programming and even smoother engine sounds
+            when used. plus the capacity of the aircraft.</p>
+          <a href="#" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+      <div class="card" style="width: 47rem;">
+        <img
+          src="https://aeroreport.de/media/pages/aviation/der-a321xlr-revolutioniert-die-langstrecke/1687d7ed72-1658825335/a321xlr-first-flight-air-to-air-2048px-800x450-crop.webp"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">A321 XLR</h5>
+          <p class="card-text">The world is beautiful and full of opportunities. The A321XLR will take you there.
+            Sometimes, a new thing can turn an opportunity into a reality. The A321XLR is one such change, enabling new
+            markets for airlines and creating new relationships between business and society.</p>
+          <a href="#" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+      <div class="card" style="width: 47rem;">
+        <img
+          src="https://static1.simpleflyingimages.com/wordpress/wp-content/uploads/2024/07/shutterstock_1666446250-1.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">A350-1000</h5>
+          <p class="card-text">The A350-1000 is powered by two Trent XWB turbofan engines that are the result of close
+            cooperation between Airbus and Rolls-Royce. The Trent XWB is the world's most efficient large aircraft
+            engine, using the best technology and materials while leveraging more than 70 million hours of in-service.
+          </p>
+          <a href="#" class="btn btn-primary">Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
